@@ -1,0 +1,46 @@
+.container{
+  margin-left: 30px;
+}
+
+.button_login{
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.sub-container {
+  display: inline-block;
+  margin: 0px 20px 10px 0px;
+  width: 200px;
+  padding: 10px;
+}
+
+.photo-container {
+  position: relative;
+  height: 180px;
+  list-style-type: none;
+}
+
+.user-img {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  z-index: 3;
+  box-shadow: 1px 2px 2px;
+}
+
+.venue-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.current-user {
+  margin-top: 15px;
+  margin-right: 50px;
+}

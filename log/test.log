@@ -1,0 +1,487 @@
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "last_name" varchar, "photo" varchar, "token" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "wishes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "venue_name" varchar, "venue_photo" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151030162227')[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151030154554')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elias"], ["created_at", "2015-11-16 01:12:46.633394"], ["updated_at", "2015-11-16 01:12:46.633394"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elias"], ["created_at", "2015-11-16 01:13:22.293808"], ["updated_at", "2015-11-16 01:13:22.293808"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elias"], ["created_at", "2015-11-16 01:14:49.405848"], ["updated_at", "2015-11-16 01:14:49.405848"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Elias"], ["created_at", "2015-11-16 01:17:10.018678"], ["updated_at", "2015-11-16 01:17:10.018678"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 02:43:42.883684"], ["updated_at", "2015-11-16 02:43:42.883684"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 2], ["created_at", "2015-11-16 02:43:42.897152"], ["updated_at", "2015-11-16 02:43:42.897152"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "wishes" SET "user_id" = ?, "updated_at" = ? WHERE "wishes"."id" = ?[0m  [["user_id", 5], ["updated_at", "2015-11-16 02:43:42.913926"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"5"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elias"], ["token", "AbsajSABjbJASbJASBJ"], ["created_at", "2015-11-16 02:46:28.694221"], ["updated_at", "2015-11-16 02:46:28.694221"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["venue_name", "AcaiAju"], ["user_id", 6], ["created_at", "2015-11-16 02:46:28.706388"], ["updated_at", "2015-11-16 02:46:28.706388"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"6"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 02:49:58.445807"], ["updated_at", "2015-11-16 02:49:58.445807"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 7], ["created_at", "2015-11-16 02:49:58.465599"], ["updated_at", "2015-11-16 02:49:58.465599"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"7"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 02:54:10.165633"], ["updated_at", "2015-11-16 02:54:10.165633"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 2], ["created_at", "2015-11-16 02:54:10.177717"], ["updated_at", "2015-11-16 02:54:10.177717"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wishes" SET "user_id" = ?, "updated_at" = ? WHERE "wishes"."id" = ?[0m  [["user_id", 8], ["updated_at", "2015-11-16 02:54:10.193705"], ["id", 4]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"8"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 02:54:28.580316"], ["updated_at", "2015-11-16 02:54:28.580316"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 2], ["created_at", "2015-11-16 02:54:28.592510"], ["updated_at", "2015-11-16 02:54:28.592510"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wishes" SET "user_id" = ?, "updated_at" = ? WHERE "wishes"."id" = ?[0m  [["user_id", 9], ["updated_at", "2015-11-16 02:54:28.608024"], ["id", 5]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 11:46:57.477806"], ["updated_at", "2015-11-16 11:46:57.477806"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 10], ["created_at", "2015-11-16 11:46:57.499131"], ["updated_at", "2015-11-16 11:46:57.499131"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"10"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("id", "name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 11:47:33.471855"], ["updated_at", "2015-11-16 11:47:33.471855"]]
+SQLite3::ConstraintException: UNIQUE constraint failed: users.id: INSERT INTO "users" ("id", "name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 11:54:42.383776"], ["updated_at", "2015-11-16 11:54:42.383776"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 11], ["created_at", "2015-11-16 11:54:42.402231"], ["updated_at", "2015-11-16 11:54:42.402231"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 11:59:57.603874"], ["updated_at", "2015-11-16 11:59:57.603874"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:03:17.822973"], ["updated_at", "2015-11-16 12:03:17.822973"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:04:24.188620"], ["updated_at", "2015-11-16 12:04:24.188620"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 14], ["created_at", "2015-11-16 12:04:24.206149"], ["updated_at", "2015-11-16 12:04:24.206149"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:05:12.461689"], ["updated_at", "2015-11-16 12:05:12.461689"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 15], ["created_at", "2015-11-16 12:05:12.481852"], ["updated_at", "2015-11-16 12:05:12.481852"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"15"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:05:58.817950"], ["updated_at", "2015-11-16 12:05:58.817950"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 16], ["created_at", "2015-11-16 12:05:58.836380"], ["updated_at", "2015-11-16 12:05:58.836380"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"16"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:06:15.677818"], ["updated_at", "2015-11-16 12:06:15.677818"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 17], ["created_at", "2015-11-16 12:06:15.697190"], ["updated_at", "2015-11-16 12:06:15.697190"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:08:15.986325"], ["updated_at", "2015-11-16 12:08:15.986325"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 18], ["created_at", "2015-11-16 12:08:16.005189"], ["updated_at", "2015-11-16 12:08:16.005189"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["id", 1], ["created_at", "2015-11-16 12:20:59.291283"], ["updated_at", "2015-11-16 12:20:59.291283"]]
+SQLite3::ConstraintException: UNIQUE constraint failed: users.id: INSERT INTO "users" ("name", "last_name", "token", "id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:21:12.747174"], ["updated_at", "2015-11-16 12:21:12.747174"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"19"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:21:22.923142"], ["updated_at", "2015-11-16 12:21:22.923142"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:30:03.549598"], ["updated_at", "2015-11-16 12:30:03.549598"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:30:03.555915"], ["updated_at", "2015-11-16 12:30:03.555915"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:30:29.272663"], ["updated_at", "2015-11-16 12:30:29.272663"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 23], ["created_at", "2015-11-16 12:30:29.295560"], ["updated_at", "2015-11-16 12:30:29.295560"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "wishes"
+Processing by WishesController#create as HTML
+  Parameters: {"wish"=>"13", "user_id"=>"23"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:30:29.307233"], ["updated_at", "2015-11-16 12:30:29.307233"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 24], ["created_at", "2015-11-16 12:30:29.310366"], ["updated_at", "2015-11-16 12:30:29.310366"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Processing by WishesController#create as HTML
+  Parameters: {"wish"=>"14", "user_id"=>"24"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:32:02.612425"], ["updated_at", "2015-11-16 12:32:02.612425"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "wishes"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:32:02.626166"], ["updated_at", "2015-11-16 12:32:02.626166"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:34:28.192474"], ["updated_at", "2015-11-16 12:34:28.192474"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 2], ["created_at", "2015-11-16 12:34:28.207403"], ["updated_at", "2015-11-16 12:34:28.207403"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "wishes"
+Processing by WishesController#create as HTML
+  Parameters: {"wish"=>"15", "user_id"=>"27"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 12:34:28.217884"], ["updated_at", "2015-11-16 12:34:28.217884"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 2], ["created_at", "2015-11-16 12:34:28.220759"], ["updated_at", "2015-11-16 12:34:28.220759"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "wishes"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:04:29.777726"], ["updated_at", "2015-11-16 13:04:29.777726"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 29], ["created_at", "2015-11-16 13:04:29.798975"], ["updated_at", "2015-11-16 13:04:29.798975"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:05:28.299206"], ["updated_at", "2015-11-16 13:05:28.299206"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 30], ["created_at", "2015-11-16 13:05:28.315679"], ["updated_at", "2015-11-16 13:05:28.315679"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"30"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:05:59.544723"], ["updated_at", "2015-11-16 13:05:59.544723"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 31], ["created_at", "2015-11-16 13:05:59.563350"], ["updated_at", "2015-11-16 13:05:59.563350"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"31"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:09:26.044745"], ["updated_at", "2015-11-16 13:09:26.044745"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 32], ["created_at", "2015-11-16 13:09:26.063801"], ["updated_at", "2015-11-16 13:09:26.063801"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"32"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:10:17.296183"], ["updated_at", "2015-11-16 13:10:17.296183"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 33], ["created_at", "2015-11-16 13:10:17.314251"], ["updated_at", "2015-11-16 13:10:17.314251"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#index as HTML
+  Parameters: {"user_id"=>"33"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:40:08.560183"], ["updated_at", "2015-11-16 13:40:08.560183"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:42:01.136793"], ["updated_at", "2015-11-16 13:42:01.136793"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:46:33.339779"], ["updated_at", "2015-11-16 13:46:33.339779"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:51:31.064283"], ["updated_at", "2015-11-16 13:51:31.064283"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 37]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 37], ["created_at", "2015-11-16 13:51:31.087825"], ["updated_at", "2015-11-16 13:51:31.087825"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 37]]
+Completed 500 Internal Server Error in 563ms (ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:56:12.046984"], ["updated_at", "2015-11-16 13:56:12.046984"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 38]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 38], ["created_at", "2015-11-16 13:56:12.069132"], ["updated_at", "2015-11-16 13:56:12.069132"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 38]]
+  Rendered wishes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+  [1m[35mWish Load (0.3ms)[0m  SELECT "wishes".* FROM "wishes" WHERE "wishes"."user_id" = ?  [["user_id", 38]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:59:05.603385"], ["updated_at", "2015-11-16 13:59:05.603385"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 39]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 39], ["created_at", "2015-11-16 13:59:05.627169"], ["updated_at", "2015-11-16 13:59:05.627169"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 39]]
+  Rendered wishes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+  [1m[35mWish Load (0.2ms)[0m  SELECT "wishes".* FROM "wishes" WHERE "wishes"."user_id" = ?  [["user_id", 39]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:59:05.645852"], ["updated_at", "2015-11-16 13:59:05.645852"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 40]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 40], ["created_at", "2015-11-16 13:59:05.649135"], ["updated_at", "2015-11-16 13:59:05.649135"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "wishes"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 13:59:05.655615"], ["updated_at", "2015-11-16 13:59:05.655615"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 41]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 41], ["created_at", "2015-11-16 13:59:05.659105"], ["updated_at", "2015-11-16 13:59:05.659105"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:43.164379"], ["updated_at", "2015-11-16 14:01:43.164379"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 42]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 42], ["created_at", "2015-11-16 14:01:43.189317"], ["updated_at", "2015-11-16 14:01:43.189317"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 42]]
+  Rendered wishes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+  [1m[35mWish Load (0.2ms)[0m  SELECT "wishes".* FROM "wishes" WHERE "wishes"."user_id" = ?  [["user_id", 42]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:43.208694"], ["updated_at", "2015-11-16 14:01:43.208694"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:43.212726"], ["updated_at", "2015-11-16 14:01:43.212726"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:53.927329"], ["updated_at", "2015-11-16 14:01:53.927329"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 45]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 45], ["created_at", "2015-11-16 14:01:53.952653"], ["updated_at", "2015-11-16 14:01:53.952653"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 45]]
+  Rendered wishes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+  [1m[35mWish Load (0.2ms)[0m  SELECT "wishes".* FROM "wishes" WHERE "wishes"."user_id" = ?  [["user_id", 45]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:53.971502"], ["updated_at", "2015-11-16 14:01:53.971502"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:01:53.975414"], ["updated_at", "2015-11-16 14:01:53.975414"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:02:08.462216"], ["updated_at", "2015-11-16 14:02:08.462216"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 48]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 48], ["created_at", "2015-11-16 14:02:08.484530"], ["updated_at", "2015-11-16 14:02:08.484530"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Processing by WishesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 48]]
+  Rendered wishes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+  [1m[35mWish Load (0.2ms)[0m  SELECT "wishes".* FROM "wishes" WHERE "wishes"."user_id" = ?  [["user_id", 48]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:02:08.502034"], ["updated_at", "2015-11-16 14:02:08.502034"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 49]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 49], ["created_at", "2015-11-16 14:02:08.505355"], ["updated_at", "2015-11-16 14:02:08.505355"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "wishes"
+Processing by WishesController#create as HTML
+  Parameters: {"wish"=>"30"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "last_name", "token", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Elias"], ["last_name", "Sousa"], ["token", "AsjajduahAojdhauNMwkaoshuAHdmneh"], ["created_at", "2015-11-16 14:02:08.513610"], ["updated_at", "2015-11-16 14:02:08.513610"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 50]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wishes" ("venue_name", "venue_photo", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["venue_name", "AçaiAju"], ["venue_photo", "http://acaiaju.com/foto1.jpg"], ["user_id", 50], ["created_at", "2015-11-16 14:02:08.517403"], ["updated_at", "2015-11-16 14:02:08.517403"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Processing by WishesController#create as HTML
+  Parameters: {"wish"=>"31"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)

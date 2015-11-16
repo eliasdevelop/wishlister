@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="text-right current-user">
+    <%= image_tag current_user.photo, class: "img-rounded", width: 50 %>
+    <p>
+      <%= "#{current_user.name} #{current_user.last_name}" %>
+    </p>
+  </div>
+
+  <% if @wishes.count > 0 %>
+    <h4>Lista de Desejos</h4>
+    <% @wishes.each do |wish| %>
+      <ul class="sub-container">
+        <li class="photo-container">
+          <%= image_tag wish.venue_photo, class: "img-rounded venue-img", width: 170 %>
+        </li>
+        <span>
+          <%= link_to "Del", user_wish_path(current_user.id, wish), method: :delete, class: "btn btn-danger btn-xs" %> 
+          <%= truncate(wish.venue_name, length: 20) %>
+        </span>
+      </ul>
+    <% end %>
+  <% end %>
+
+  <h4>Recentes</h4>
+  <% @checkins.each do |id, checkin| %>
+    <ul class="sub-container">
+      <li class="photo-container">
+        <%= image_tag checkin[:user_photo], class: "img-thumbnail user-img", width: 50 %>
+        <%= image_tag checkin[:venue_photo], class: "img-rounded venue-img", width: 170 %>
+      </li>
+      <span>
+        <%= link_to "Add", user_wishes_path(wish: { venue_name: checkin[:venue_name], 
+                                                    venue_photo: checkin[:venue_photo], 
+                                                    user_id: current_user.id}), method: :post, class: "btn btn-success btn-xs" %> 
+        <%= truncate(checkin[:venue_name], length: 20) %>
+      </span>
+    </ul>
+  <% end %>
+</div>
